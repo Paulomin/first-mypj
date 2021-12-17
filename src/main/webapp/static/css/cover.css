@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+.cover-main-box{
+	font-family: 'Stylish', sans-serif;
+	font-size : 30px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.main-area {
+	padding : 60px;
+}
+
+/* 더보기 버튼 CSS */
+
+.main-area_more-area {
+	border-radius : 4px;
+	width: 120px;
+	margin : 0 auto;
+	cursor: pointer;
+}
+
+.main-area_moreBtn {
+	text-decoration: none;
+	color : black;
+	cursor: pointer;
+}
+
+.main-area_more-area:hover {
+	background-color: darkgray;
+}
+
+
+
+
+

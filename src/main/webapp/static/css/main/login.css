@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+.login-area {
+	/* 부트스트랩 적용하면서 box-size 적용돼서 마진, 패딩으로 위치 조정해야함*/
+	display: flex;
+	justify-content: center;
+}
+
+.login-area_box {
+	border: 1px solid gray;
+	margin: 0 auto;
+	width: 350px;
+	height: 300px;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+.login-input{
+	display: block;
+	width: 235px;
+	height: 40px;
+	margin-top : 20px;
+	border-radius: 4px;
+	border : none;
+}

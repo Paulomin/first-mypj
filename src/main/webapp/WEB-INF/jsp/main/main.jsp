@@ -7,12 +7,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>OSCollection</title>
 <link rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.ico" sizes="48x48">
-	<jsp:include page="/WEB-INF/jsp/head/defalut.jsp" flush="false" />
+<link type="text/css" rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 	<jsp:include page="/WEB-INF/jsp/head/top-menu.jsp" flush="false" />  
 	<h1>dwqdw</h1>
+	<div></div>
 </body>
 </html>

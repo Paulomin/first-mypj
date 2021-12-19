@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>OSCollection</title>
+<title>OSC에 오신걸 환영합니다!</title>
 <link rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.ico" sizes="48x48">
 <link type="text/css" rel="stylesheet" href="/static/css/style.css">
 

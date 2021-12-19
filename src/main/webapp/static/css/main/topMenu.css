@@ -1,9 +1,23 @@
 @charset "UTF-8";
 
-.my-css_header-color{
+.top-menu-header{
 	background-color:#bb9445;
+	height: 70px;
+	border-bottom : 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
 }
 
-.my-css_btn-margin{
-	margin-right: 10px;
+
+.menu-list li{
+	float: left;
+	list-style: none;
+	padding-right: 10px;
 }
+
+.site-logo, 
+.btn-area {
+	margin : 16px 0px;
+}
+

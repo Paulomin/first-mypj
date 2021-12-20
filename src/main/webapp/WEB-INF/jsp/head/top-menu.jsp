@@ -10,11 +10,11 @@
       <!-- 로고자리 -->
       <span class="site-logo"><a href="/main">OSC</a></span>
       <ul class="menu-list">
-        <li><a href="#" class="menu-contents">Home</a></li>
-        <li><a href="#" class="menu-contents">Features</a></li>
-        <li><a href="#" class="menu-contents">Pricing</a></li>
-        <li><a href="#" class="menu-contents">FAQs</a></li>
-        <li><a href="#" class="menu-contents">About</a></li>
+        <li class="menu-contents"><a href="#" class="list-a">Home</a></li>
+        <li class="menu-contents"><a href="#" class="list-a">Features</a></li>
+        <li class="menu-contents"><a href="#" class="list-a">Pricing</a></li>
+        <li class="menu-contents"><a href="#" class="list-a">FAQs</a></li>
+        <li class="menu-contents"><a href="#" class="list-a">About</a></li>
       </ul>
 
       <div class="btn-area">

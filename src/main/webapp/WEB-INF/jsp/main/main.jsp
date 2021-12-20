@@ -13,7 +13,15 @@
 </head>
 <body>
 	<jsp:include page="/WEB-INF/jsp/head/top-menu.jsp" flush="false" />  
-	<h1>dwqdw</h1>
-	<div></div>
+	<main class="main-contents-area">
+		<div class="contents-box">
+			
+		</div>
+		<div class="contents-box"></div>
+		<div class="contents-box"></div>
+		<div class="contents-box"></div>
+		<div class="contents-box"></div>
+
+	</main>
 </body>
 </html>

@@ -3,7 +3,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<!DOCTYPE html>
+
+<%
+	boolean logined = false;
+
+	if(session.getAttribute("logined") != null) {
+		logined = (boolean)session.getAttribute("logined");
+	}
+
+%>
+
 <link type="text/css" rel="stylesheet" href="/static/css/main/topMenu.css">
 
 <header class="top-menu-header">
@@ -18,7 +27,12 @@
       </ul>
 
       <div class="btn-area">
-        <button type="button" class="btn-style"><a href="/login">Login</a></button>
-        <button type="button" class="btn-style"><a href="/sign">Sign-up</a></button>
+      	<% if(logined) { %>
+         	<button type="button" class="btn-style"><a href="/login">Login</a></button>
+         	<button type="button" class="btn-style"><a href="/sign">Sign-up</a></button>
+        <%} else { %>
+        	<button type="button" class="btn-style"><a href="/logout">Logout</a></button>
+         	<button type="button" class="btn-style"><a href="/info">MyInfo</a></button>
+        <%} %>
       </div>
 </header>

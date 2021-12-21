@@ -73,5 +73,10 @@ public class SignDTO {
 	public void setJoindate(Date joindate) {
 		this.joindate = joindate;
 	}
+	
+	// 패스워드 같은지 확인하는 메서드
+	public boolean equalsPassword(SignDTO dto) {
+		return this.password.equals(dto.getPassword());
+	}
 }
 

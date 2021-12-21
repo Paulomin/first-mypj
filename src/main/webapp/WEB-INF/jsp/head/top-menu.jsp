@@ -18,7 +18,7 @@
       </ul>
 
       <div class="btn-area">
-        <button type="button" class="btn-style">Login</button>
-        <button type="button" class="btn-style">Sign-up</button>
+        <button type="button" class="btn-style"><a href="/login">Login</a></button>
+        <button type="button" class="btn-style"><a href="/sign">Sign-up</a></button>
       </div>
 </header>

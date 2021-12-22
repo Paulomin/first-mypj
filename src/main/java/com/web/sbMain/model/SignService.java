@@ -2,7 +2,17 @@ package com.web.sbMain.model;
 
 import java.util.*;
 
+import  com.web.sbMain.*;
+
 public class SignService {
+	
+	public boolean isValid(SignDTO dto) {
+		if(isEmpty(dto.getUserid()) || isEmpty(dto.getPassword()) || isEmpty(dto.getUsername())
+				|| isEmpty(dto.getEmail()) || isEmpty(dto.getPhone())) {
+			return false;
+		}
+		return true;
+	}
 	
 	private boolean isEmpty(String str) {
 		// 빈칸인 경우
@@ -20,8 +30,16 @@ public class SignService {
 				dto.setUsername(signUserData.getUsername());
 				dto.setEmail(signUserData.getEmail());
 				dto.setPhone(signUserData.getPhone());
+				dto.setJoindate(signUserData.getJoindate());
 				dao.close();
-			}
+				return true;
+			} else {
+				dao.close();
+				return false;
+			} 
+		} else {
+			dao.close();
+			return false;
 		}
 	}
 

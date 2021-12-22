@@ -1,5 +1,7 @@
 package com.web.sbMain.model;
 
+import java.util.*;
+
 import com.db.conn.*;
 
 public class SignDAO {
@@ -19,5 +21,12 @@ public class SignDAO {
 	}
 	public void close() {
 		oc.close();
+	}
+
+
+
+	public List<SignDTO> select(String userid) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

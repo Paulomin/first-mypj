@@ -3,17 +3,19 @@
 
 .login-area {
 	/* 부트스트랩 적용하면서 box-size 적용돼서 마진, 패딩으로 위치 조정해야함*/
-	display: flex;
-	justify-content: center;
+
 }
 
 .login-area_box {
 	border: 1px solid gray;
 	margin: 0 auto;
+	margin-top: 100px;
 	width: 350px;
 	height: 300px;
-	text-align: center;
-	box-sizing: content-box;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .login-input{
@@ -23,4 +25,20 @@
 	margin-top : 20px;
 	border-radius: 4px;
 	border : none;
+}
+
+.login-input2 {
+	padding-left: 7px;
+	background-color: darkgray;
+}
+
+.login_text{
+	font-size: 34px;
+}
+
+
+.login_btn {
+	cursor: pointer;
+	background-color: black;
+	color : white;
 }

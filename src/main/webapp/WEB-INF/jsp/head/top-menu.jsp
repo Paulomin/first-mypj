@@ -28,11 +28,11 @@
 
       <div class="btn-area">
       	<% if(logined) { %>
-         	<button type="button" class="btn-style"><a href=<%=request.getContextPath() + "/login" %>">Login</a></button>
-         	<button type="button" class="btn-style"><a href=<%=request.getContextPath() + "/sign" %>">Sign-up</a></button>
+         	<button type="button" class="btn-style"><a href="<%=request.getContextPath() + "/login" %>">Login</a></button>
+         	<button type="button" class="btn-style"><a href="<%=request.getContextPath() + "/sign" %>">Sign-up</a></button>
         <%} else { %>
-        	<button type="button" class="btn-style"><a href=<%=request.getContextPath() + "/logout" %>">Logout</a></button>
-         	<button type="button" class="btn-style"><a href=<%=request.getContextPath() + "/lnfo" %>">MyInfo</a></button>
+        	<button type="button" class="btn-style"><a href="<%=request.getContextPath() + "/logout" %>">Logout</a></button>
+         	<button type="button" class="btn-style"><a href="<%=request.getContextPath() + "/lnfo" %>">MyInfo</a></button>
         <%} %>
       </div>
 </header>

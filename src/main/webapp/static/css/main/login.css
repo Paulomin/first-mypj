@@ -7,7 +7,6 @@
 }
 
 .login-area_box {
-	border: 1px solid gray;
 	margin: 0 auto;
 	margin-top: 100px;
 	width: 350px;
@@ -41,4 +40,8 @@
 	cursor: pointer;
 	background-color: black;
 	color : white;
+}
+
+.login_btn:hover {
+	background-color: #766F70;
 }

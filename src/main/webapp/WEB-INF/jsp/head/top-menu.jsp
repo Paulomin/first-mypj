@@ -27,7 +27,7 @@
       </ul>
 
       <div class="btn-area">
-      	<% if(logined) { %>
+      	<% if(!logined) { %>
          	<button type="button" class="btn-style"><a href="<%=request.getContextPath() + "/login" %>">Login</a></button>
          	<button type="button" class="btn-style"><a href="<%=request.getContextPath() + "/sign" %>">Sign-up</a></button>
         <%} else { %>

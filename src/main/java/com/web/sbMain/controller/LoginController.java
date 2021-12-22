@@ -28,7 +28,14 @@ public class LoginController extends HttpServlet {
 		SignService service = new SignService();
 		
 		if(service.login(dto)) {
-			
+			HttpSession session = request.getSession();
+			session.setAttribute("sign", dto);
+			session.setAttribute("logined", true);
+			response.sendRedirect(request.getContextPath() + "/");
+		} else {
+			String view = "/WEB-INF/jsp/login/login.jsp";
+			RequestDispatcher redi = request.getRequestDispatcher(view);
+			redi.forward(request, response);
 		}
 	}
 }

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
 @import url(main/main.css);
 @import url(main/login.css);
+@import url(main/sign.css);
 
 body {
 	background-color : #799D9F;

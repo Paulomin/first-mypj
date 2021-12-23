@@ -1,1 +1,62 @@
 @charset "UTF-8";
+
+.sign-main{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* 로고 css */
+
+.sign-header-area {
+	text-align: center;
+}
+
+.sign-header-text {
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.sign-header-text a {
+	text-decoration: none;
+	color:white;
+}
+
+
+/* label 위로 가게 하기*/
+.sign-main-area label {
+	display : block;
+	padding : 5px 0px;
+}
+
+/* 회원가입 input창 스톼일 */
+.sign-input {
+	width: 250px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border : none;
+	background-color: #445758;
+	color : white;
+}
+
+.sign-main-area {
+	
+}
+
+/* 가입하기 버튼 스타일 */
+.sign-btn {
+	display: block;
+	width: 257px;
+	height: 35px;
+	padding : 0px;
+	margin : 0px;
+	margin-top : 15px;
+	border-radius: 4px;
+	border:none;
+	cursor: pointer;
+	background-color: #445758;
+	color : white;
+}
+
+

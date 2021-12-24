@@ -22,12 +22,15 @@ public class SignDAO {
 	
 	public void commit() {
 		oc.commit();
+		mc.commit();
 	}
 	public void rollback() {
 		oc.rollback();
+		mc.rollback();
 	}
 	public void close() {
 		oc.close();
+		mc.close();
 	}
 
 

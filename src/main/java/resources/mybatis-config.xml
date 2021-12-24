@@ -20,7 +20,7 @@
     </environment>
   </environments>
   <mappers>
-  	<mapper resource=""/>
+  	<mapper resource="resources/mapper/sign.xml"/>
     <mapper resource=""/>
   </mappers>
 </configuration>

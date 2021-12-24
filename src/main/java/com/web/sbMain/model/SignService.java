@@ -21,26 +21,15 @@ public class SignService {
 	
 	public boolean login(SignDTO dto) {
 		SignDAO dao = new SignDAO();
-		List<SignDTO> data = dao.select(dto.getUserid());
-		if(data.size() == 1) {
-			SignDTO signUserData = data.get(0);
-			if(dto.equalsPassword(signUserData)) {
-				dto.setUserid(signUserData.getUserid());
-				dto.setPassword(signUserData.getPassword());
-				dto.setUsername(signUserData.getUsername());
-				dto.setEmail(signUserData.getEmail());
-				dto.setPhone(signUserData.getPhone());
-				dto.setJoindate(signUserData.getJoindate());
-				dao.close();
-				return true;
-			} else {
-				dao.close();
-				return false;
-			} 
-		} else {
-			dao.close();
-			return false;
+		SignDTO data = dao.selectLogin(dto);
+		dao.close();
+		if(data != null) {
+			dto.setId(data.getId());
+			dto.setPassword("");
+			dto.setEmail(data.getEmail());
+			dto.setJoindate(data.getJoindate());
+			return true;
 		}
+		return false;
 	}
-
 }

@@ -14,20 +14,47 @@ public class SignDAO {
 		this.mc = new MybatisConnect();
 		this.sess = this.mc.getSession();
 	}
-
-	public SignDTO selectLogin(SignDTO dto) {
-		SignDTO data = this.sess.selectOne("SignMapper.selectId", dto);
-		return  data;
+	
+	public boolean insertAccount(SignDTO dto) {
+		int res = this.sess.insert("SignMapper.insertAccount", dto);
+		return res == 1 ? true : false;
+	}
+	
+	public boolean updateAccountInfo(SignDTO dto) {
+		int res = this.sess.update("SignMapper.updateAccountInfo", dto);
+		return res == 1 ? true : false;
+	}
+	
+	public boolean uadateAccountPassword(SignDTO dto) {
+		int res = this.sess.update("SignMapper.updateAccountPassword", dto);
+		return res == 1 ? true : false;
+	}
+	
+	public boolean deleteAccount(SignDTO dto) {
+		int res = this.sess.delete("SignMapper.deleteAccount", dto);
+		return res == 1 ? true : false;
+	}
+	
+	public SignDTO selectAccount(SignDTO dto) {
+		SignDTO data = this.sess.selectOne("SignMapper.selectAccount", dto);
+		return data;
+	}
+	
+	public SignDTO selectLogin(String userid) {
+		SignDTO data = this.sess.selectOne("SignMapper.selectLogin", userid);
+		return data;
 	}
 	
 	public void commit() {
 		oc.commit();
 		mc.commit();
 	}
+	
 	public void rollback() {
 		oc.rollback();
 		mc.rollback();
 	}
+	
 	public void close() {
 		oc.close();
 		mc.close();

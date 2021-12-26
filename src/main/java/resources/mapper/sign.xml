@@ -4,14 +4,23 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="SignMapper">
   
-  <select id="selectId" parameterType="list" resultType="com.web.sbMain.model.SignDTO">
+  <select id="selectAccount" parameterType="signAccount" resultType="signAccount"> 
   	SELECT * FROM OSCUSER
   	<where>
-  		ID in
-  		<foreach item="n" collection="list" open="(" separator="," close=")">
-  			#{n}
-  		</foreach>
+  		<if test="id != 0">
+  			AND ID = #{id}
+  		</if>
+  		<if test="userid != null">
+  			AND USERID = #{userid}
+  		</if>
+  		<if test="password != null">
+  			AND PASSWORD = #{password}
+  		</if>
   	</where>
+  </select>
+  
+  <select id="selectLogin" parameterType="String" resultType="signAccount">
+  	SELECT * FROM USER1.OSCUSER WHERE USERID = #{user-id}
   </select>
   
 </mapper>

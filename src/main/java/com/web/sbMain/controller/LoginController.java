@@ -21,8 +21,8 @@ public class LoginController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		String userid = request.getParameter("USERID");
-		String userpw = request.getParameter("PASSWORD");
+		String userid = request.getParameter("user-id");
+		String userpw = request.getParameter("user-pw");
 		
 		SignDTO dto = new SignDTO(userid, userpw);
 		SignService service = new SignService();
@@ -32,10 +32,12 @@ public class LoginController extends HttpServlet {
 			session.setAttribute("sign", dto);
 			session.setAttribute("logined", true);
 			response.sendRedirect(request.getContextPath() + "/");
+			System.out.println("good");
 		} else {
 			String view = "/WEB-INF/jsp/login/login.jsp";
 			RequestDispatcher redi = request.getRequestDispatcher(view);
 			redi.forward(request, response);
+			System.out.println("else오류");
 		}
 	}
 }

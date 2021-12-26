@@ -17,6 +17,14 @@ public class SignDTO {
 		this.userid = userid;
 		this.password = password;
 	}
+	
+	public SignDTO(String userid, String password, 
+			String username, String email, String phone) {
+		this(userid, password);
+		this.username = username;
+		this.email = email;
+		this.phone = phone;
+	}
 
 	public int getId() {
 		return id;

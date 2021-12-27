@@ -15,8 +15,9 @@ public class SignDAO {
 		this.sess = this.mc.getSession();
 	}
 	
-	public boolean insertAccount(SignDTO dto) {
-		int res = this.sess.insert("SignMapper.insertAccount", dto);
+	public boolean joinAccount(SignDTO dto) {
+		int res = this.sess.insert("SignMapper.joinAccount", dto);
+		System.out.println("res : " + res);
 		return res == 1 ? true : false;
 	}
 	
@@ -40,8 +41,12 @@ public class SignDAO {
 		return data;
 	}
 	
-	public SignDTO selectLogin(String userid) {
-		SignDTO data = this.sess.selectOne("SignMapper.selectLogin", userid);
+	public SignDTO selectLogin(String userid, String password) {
+		SignDTO dto = new SignDTO();
+		dto.setUserid(userid);
+		dto.setPassword(password);
+		
+		SignDTO data = this.sess.selectOne("SignMapper.selectLogin", dto);
 		return data;
 	}
 	

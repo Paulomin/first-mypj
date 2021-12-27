@@ -25,18 +25,24 @@ public class SignService {
 		return str.isEmpty();
 	}
 	
-	public boolean useradd(SignDTO dto) {
-		return false;
+	public boolean joinAccount(SignDTO dto) {
+		SignDAO dao = new SignDAO();
+		boolean data = dao.joinAccount(dto);
+		
+		if(data) {
+			dao.commit();
+		} else {
+			dao.rollback();
+		}
+		dao.close();
+		return data;
 	}
 	
 	public boolean login(SignDTO dto) {
 		SignDAO dao = new SignDAO();
-		SignDTO data = dao.selectLogin(dto.getUserid());
+		SignDTO data = dao.selectLogin(dto.getUserid(), dto.getPassword());
 		dao.close();
 		if(data != null) {
-			if(!dto.getPassword().equals(data.getPassword())) {
-				return false;
-			}
 			dto.setId(data.getId());
 			dto.setPassword("");
 			dto.setEmail(data.getEmail());

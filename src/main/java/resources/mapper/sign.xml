@@ -19,8 +19,22 @@
   	</where>
   </select>
   
-  <select id="selectLogin" parameterType="String" resultType="signAccount">
-  	SELECT * FROM USER1.OSCUSER WHERE USERID = #{user-id}
+  <select id="selectLogin" parameterType="signAccount" resultType="signAccount">
+  	SELECT * FROM USER1.OSCUSER 
+  	 WHERE USERID = #{userid}
+  	   AND PASSWORD = #{password}
   </select>
+  
+  <insert id="joinAccount" parameterType="signAccount">
+  	INSERT INTO OSCUSER VALUES(
+  		   OSCUSER_SEQ.NEXTVAL
+  		 , #{userid}
+  		 , #{password}
+  		 , #{username}
+  		 , #{email}
+  		 , #{phone}
+  		 , SYSDATE +9/24
+  	)
+  </insert>
   
 </mapper>

@@ -45,3 +45,13 @@
 .login_btn:hover {
 	background-color: #766F70;
 }
+
+.must-input {
+	border: 1px solid red;
+	border-radius : 4px;
+	background-color: red;
+	color : white;
+}
+
+
+

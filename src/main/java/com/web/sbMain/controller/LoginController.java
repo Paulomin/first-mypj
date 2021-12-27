@@ -36,8 +36,9 @@ public class LoginController extends HttpServlet {
 		} else {
 			String view = "/WEB-INF/jsp/login/login.jsp";
 			RequestDispatcher redi = request.getRequestDispatcher(view);
+			request.setAttribute("fail", "ID 혹은 비밀번호를 잘못 입력하셨거나 등록되지 않은 ID 입니다.");
 			redi.forward(request, response);
-			System.out.println("else오류");
+			
 		}
 	}
 }

@@ -13,6 +13,10 @@ public class SignDTO {
 	
 	public SignDTO() {}
 	
+	public SignDTO(String userid) {
+		this.userid = userid;
+	}
+	
 	public SignDTO(String userid, String password) {
 		this.userid = userid;
 		this.password = password;

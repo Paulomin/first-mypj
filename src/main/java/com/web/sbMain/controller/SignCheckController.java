@@ -13,17 +13,18 @@ public class SignCheckController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		String user_id = request.getParameter("userId");
+		String userid = request.getParameter("userId");
 		
 		SignService service = new SignService();
-		SignDTO dto = new SignDTO(user_id);
+		SignDTO dto = new SignDTO();
+		dto.setUserid(userid);
 		SignDTO data = service.findAccount(dto);
 		
 		JSONObject json = new JSONObject();
 		if(data == null) {
-			json.put("state", "possible");
+			json.put("able", "possible");
 		} else {
-			json.put("state", "used");
+			json.put("able", "used");
 		}
 		
 		response.getWriter().println(json.toJSONString());

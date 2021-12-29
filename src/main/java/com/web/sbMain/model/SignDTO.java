@@ -11,10 +11,8 @@ public class SignDTO {
 	private String phone;
 	private Date joindate;
 	
-	public SignDTO() {}
-	
-	public SignDTO(String userid) {
-		this.userid = userid;
+	public SignDTO() {
+		this.userid = "";
 	}
 	
 	public SignDTO(String userid, String password) {
@@ -90,5 +88,13 @@ public class SignDTO {
 	public boolean equalsPassword(SignDTO dto) {
 		return this.password.equals(dto.getPassword());
 	}
+
+	@Override
+	public String toString() {
+		return "SignDTO [id=" + id + ", userid=" + userid + ", password=" + password + ", username=" + username
+				+ ", email=" + email + ", phone=" + phone + ", joindate=" + joindate + "]";
+	}
+	
+	
 }
 

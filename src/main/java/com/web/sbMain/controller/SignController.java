@@ -39,9 +39,12 @@ public class SignController extends HttpServlet {
 			// 이상 없는 경우 가입
 			if(service.joinAccount(dto)) {
 				response.sendRedirect("/login");
-				System.out.println("완전성공");
 			} else {
-				System.out.println("오류");
+				request.setAttribute("info", dto); // 입력된 정보들을 dto에 넣는다.
+				request.setAttribute("fail", "중복");
+				String view = "WEB-INF/jsp/sign/sign.jsp";
+				RequestDispatcher rd = request.getRequestDispatcher(view);
+				rd.forward(request, response);
 			}
 		} else {
 			System.out.println("오류2");

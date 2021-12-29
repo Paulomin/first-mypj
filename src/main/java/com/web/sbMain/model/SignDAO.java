@@ -17,7 +17,6 @@ public class SignDAO {
 	
 	public boolean joinAccount(SignDTO dto) {
 		int res = this.sess.insert("SignMapper.joinAccount", dto);
-		System.out.println("res : " + res);
 		return res == 1 ? true : false;
 	}
 	

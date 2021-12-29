@@ -7,12 +7,14 @@
   <select id="selectAccount" parameterType="signAccount" resultType="signAccount"> 
   	SELECT * FROM OSCUSER
   	<where>
-  		<if test="id != 0">
-  			AND ID = #{id}
-  		</if>
-  		<if test="userid != null">
-  			AND USERID = #{userid}
-  		</if>
+  		<choose>
+  			<when test="id != 0">
+  				AND ID = #{id}
+  			</when>
+  			<when test="userid != null">
+  				AND USERID = #{userid}
+  			</when>
+  		</choose>
   		<if test="password != null">
   			AND PASSWORD = #{password}
   		</if>

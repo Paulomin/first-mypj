@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import ="com.web.sbMain.model.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,6 @@
 <title>OSC 회원가입</title>
 <link rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.ico" sizes="48x48">
 <link type="text/css" rel="stylesheet" href="/static/css/style.css">
-<script type="text/javascript" src="/static/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="/static/js/checkJoin.js"></script>
 </head>
 <body class="sign-body">
 	<div class="sign-header-area">
@@ -19,7 +18,7 @@
 			<div class="sign-main-area">
 				<label for="user_id">아이디</label>
 				<input type="text" id="user_id" name ="userId" class="sign-input" placeholder="아이디" 
-						onblur="userIdCheck();" required>
+					   onblur="userIdCheck();" required>
 				<div id="id_check"></div>
 				
 			</div>
@@ -63,5 +62,7 @@
 			</div>
 		</form>
 	</div>
+<script type="text/javascript" src="/static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/static/js/checkJoin.js"></script>
 </body>
 </html>

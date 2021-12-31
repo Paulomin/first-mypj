@@ -6,7 +6,7 @@
   <properties url="file:///c:/Users/user/oracle_connection.prop">
   </properties>
   <typeAliases>
-  	<typeAlias type="" alias="" />
+  	<typeAlias type="com.web.sbMain.model.SignDTO" alias="signAccount" />
   </typeAliases>
   <environments default="development">
     <environment id="development">
@@ -21,6 +21,5 @@
   </environments>
   <mappers>
   	<mapper resource="resources/mapper/sign.xml"/>
-    <mapper resource=""/>
   </mappers>
 </configuration>

@@ -1,5 +1,46 @@
 @charset "UTF-8";
 
+.main-img_area {
+	text-align: center;
+	background-color: #F9F9F9;
+}
+
+.main-img_area img{
+	width: 500px;
+	height: 450px;
+	border-left : none;
+	border-right: none;
+}
+
+.main-contents-area {
+	display : flex;
+	justify-content: space-around;
+	margin-top : 70px;
+	
+}
+
+.contents-box {
+	border : 1px solid gray;
+	width: 300px;
+	height: 350px;
+}
+
+/* 새 게시글 헤더 */
+
+.h-text-area {
+	position: relative;
+	left: 25px;
+}
+
+.h-text-area .h-text-h2 {
+	margin-bottom : 3px;
+}
+
+h-text-h2 .h-text-span {
+	padding-left: 2px;
+	color: #909090;
+}
+
 
 
 

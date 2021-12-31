@@ -10,9 +10,20 @@
 <title>OSCollection</title>
 <link rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.ico" sizes="48x48">
 <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+<link type="text/css" rel="stylesheet" href="/static/css/main/main.css">
 </head>
 <body>
 	<jsp:include page="/WEB-INF/jsp/head/top-menu.jsp" flush="false" />  
+	
+	<div class="main-img">
+		<div class="main-img_area">
+			<img alt="main-img-file" src="/static/img/main.jpg">
+		</div>
+	</div>
+	<div class="h-text-area">
+		<h2 class="h-text-h2">New Contents</h2>
+		<span class="h-text-span">새 글</span>
+	</div>
 	<main class="main-contents-area">
 		<div class="contents-box">
 			

@@ -24,15 +24,31 @@
 		<h2 class="h-text-h2">New Contents</h2>
 		<span class="h-text-span">새 글</span>
 	</div>
-	<main class="main-contents-area">
+	<div class="main-contents-area">
 		<div class="contents-box">
-			
+			<div class="contents-img">
+				<img alt="" src="/static/img/img-1.jpg">
+			</div>
+			<div class="contents-text">asdwqfwqfwq<br>123</div>
 		</div>
-		<div class="contents-box"></div>
-		<div class="contents-box"></div>
-		<div class="contents-box"></div>
-		<div class="contents-box"></div>
-
-	</main>
+		<div class="contents-box">
+			<div class="contents-img">
+				<img alt="" src="/static/img/img-1.jpg">
+			</div>
+			<div class="contents-text">asdwqfwqfwq<br>456</div>
+		</div>
+		<div class="contents-box">
+			<div class="contents-img">
+				<img alt="" src="/static/img/img-1.jpg">
+			</div>
+			<div class="contents-text">asdwqfwqfwq<br>789</div>
+		</div>
+		<div class="contents-box">
+			<div class="contents-img">
+				<img alt="" src="/static/img/img-1.jpg">
+			</div>
+			<div class="contents-text">asdwqfwqfwq<br>101</div>
+		</div>
+	</div>
 </body>
 </html>

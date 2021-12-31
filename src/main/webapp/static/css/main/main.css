@@ -18,6 +18,7 @@
 	justify-content: space-around;
 	align-content: center;
 	margin: 25px 10px 10px 10px;
+	flex-wrap: wrap;
 	
 }
 
@@ -30,12 +31,6 @@
 	width: 255px;
 	height: 255px;
 	border: 1px solid gray;
-	display: flex;
-	flex-direction: column;
-	align-content: space-between;
-}
-
-.contents-text {
 }
 
 /* 새 게시글 헤더 */

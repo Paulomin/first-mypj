@@ -27,9 +27,12 @@
 	<div class="main-contents-area">
 		<div class="contents-box">
 			<div class="contents-img">
-				<img alt="" src="/static/img/img-1.jpg">
+				<a href="./boardPost"><img alt="" src="/static/img/img-1.jpg"></a>
 			</div>
-			<div class="contents-text">asdwqfwqfwq<br>123</div>
+			<div class="contents-text">
+				<a href="./boardPost">asdwqfwqfwq</a>
+				<br>123
+			</div>
 		</div>
 		<div class="contents-box">
 			<div class="contents-img">

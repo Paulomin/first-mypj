@@ -28,9 +28,11 @@
 }
 
 .contents-img img {
-	width: 255px;
-	height: 255px;
+	width: 240px;
+	height: 240px;
 	border: 1px solid gray;
+	border-radius: 6px;
+	box-shadow: 5px 5px 5px 5px #766F70;
 }
 
 /* 새 게시글 헤더 */
@@ -47,6 +49,10 @@
 .h-text-span {
 	padding-left: 2px;
 	color: #766F70;
+}
+
+.contents-text {
+	margin-top : 5px;
 }
 
 

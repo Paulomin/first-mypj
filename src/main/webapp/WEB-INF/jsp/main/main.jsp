@@ -30,7 +30,7 @@
 				<a href="./boardPost"><img alt="" src="/static/img/img-1.jpg"></a>
 			</div>
 			<div class="contents-text">
-				<a href="./boardPost">asdwqfwqfwq</a>
+				<a href="./boardPost" class="contents-text-a">asdwqfwqfwq</a>
 				<br>123
 			</div>
 		</div>

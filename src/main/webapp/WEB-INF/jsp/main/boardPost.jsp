@@ -15,25 +15,6 @@
 <body>
 	<jsp:include page="/WEB-INF/jsp/head/top-menu.jsp" flush="false" />
 	
-	
-	<div class="text-area">
-		<form action="" method="post">
-			<div>
-				<label for="text-title">제목</label>
-				<input type="text" id="text-title" name="c-title" placeholder="제목" required>
-			</div>
-			<div>
-				<label>내용</label>
-				<textarea rows="" cols=""></textarea>
-			</div>
-			<div>
-				<label for="text-file">파일선택</label>
-				<input type="file" id="text-file" name="c-file" accept="image/*">
-			</div>
-			<div>
-				<button type="submit">글등록</button>
-			</div>
-		</form>
-	</div>
+	<!-- 여기는 게시글 상세 페이지임 -->
 </body>
 </html>

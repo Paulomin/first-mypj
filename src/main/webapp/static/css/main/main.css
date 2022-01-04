@@ -55,6 +55,12 @@
 	margin-top : 5px;
 }
 
+/* 게시글 a태그 스타일 수정 */
+.contents-text a {
+	color : white;
+	text-decoration: none;
+}
+
 
 
 

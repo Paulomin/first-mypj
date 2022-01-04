@@ -21,8 +21,13 @@
 		</div>
 	</div>
 	<div class="h-text-area">
-		<h2 class="h-text-h2">New Contents</h2>
-		<span class="h-text-span">새 글</span>
+		<div class="h-text-area-first">
+			<h2 class="h-text-h2">New Contents</h2>
+			<span class="h-text-span">새 글</span>
+		</div>
+		<div class="h-text-area-second">
+			<button type="button" class="h-text-area-second_btn" onclick="">글등록</button>
+		</div>
 	</div>
 	<div class="main-contents-area">
 		<div class="contents-box">

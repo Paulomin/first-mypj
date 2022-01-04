@@ -38,11 +38,17 @@
 /* 새 게시글 헤더 */
 
 .h-text-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.h-text-area-first {
 	position: relative;
 	left: 25px;
 }
 
-.h-text-area .h-text-h2 {
+.h-text-area-first .h-text-h2 {
 	margin-bottom : 3px;
 }
 
@@ -53,6 +59,18 @@
 
 .contents-text {
 	margin-top : 5px;
+}
+
+.h-text-area-second_btn {
+	width: 70px;
+	height: 33px;
+	margin-right: 10px;
+	padding : 0px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: white;
+	color: #766F70;
 }
 
 /* 게시글 a태그 스타일 수정 */

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.oreilly.servlet.*;
+import com.oreilly.servlet.multipart.*;
 
 @WebServlet("/write")
 public class WriteController extends HttpServlet {
@@ -25,10 +26,10 @@ public class WriteController extends HttpServlet {
 			throws ServletException, IOException {
 		MultipartRequest multi = new MultipartRequest(
 				request,
-				request.getServletContext().getRealPath(getServletInfo())
-				
-				
-				)
+				request.getServletContext().getRealPath("/uploadFile"),
+				1024 * 1024 * 10,
+				"utf-8",
+				new DefaultFileRenamePolicy());
 		
 	}
 

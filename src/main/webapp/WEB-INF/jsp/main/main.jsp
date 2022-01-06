@@ -26,7 +26,7 @@
 			<span class="h-text-span">새 글</span>
 		</div>
 		<div class="h-text-area-second">
-			<button type="button" class="h-text-area-second_btn" onclick="">글등록</button>
+			<a href="./write"><button type="button" class="h-text-area-second_btn">글등록</button></a>
 		</div>
 	</div>
 	<div class="main-contents-area">

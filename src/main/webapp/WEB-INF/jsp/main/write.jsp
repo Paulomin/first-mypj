@@ -13,17 +13,20 @@
 <link type="text/css" rel="stylesheet" href="/static/css/board/write.css">
 </head>
 <body>
-	<jsp:include page="/WEB-INF/jsp/head/top-menu.jsp" flush="false" />
 	
 		<div class="text-area">
-		<form action="" method="post">
+		<form action="./write" method="post" enctype="multipart/form-data">
 			<div>
 				<label for="text-title">제목</label>
 				<input type="text" id="text-title" name="c-title" placeholder="제목" required>
 			</div>
 			<div>
+				<label for="text-title">가격(리셀가)</label>
+				<input type="text" id="text-resell" name="c-resell" placeholder="가격(리셀가)">
+			</div>
+			<div>
 				<label>내용</label>
-				<textarea rows="" cols=""></textarea>
+				<textarea id="text-contents" name="c-contents" rows="" cols="" placeholder="내용을 입력하세요..."></textarea>
 			</div>
 			<div>
 				<label for="text-file">파일선택</label>

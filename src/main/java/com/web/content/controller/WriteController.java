@@ -23,7 +23,12 @@ public class WriteController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		MultipartRequest multi = new MultipartRequest()
+		MultipartRequest multi = new MultipartRequest(
+				request,
+				request.getServletContext().getRealPath(getServletInfo())
+				
+				
+				)
 		
 	}
 
